@@ -26,35 +26,101 @@
     </style>
 </head>
 <body class="font-manrope">
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <header class="w-[95%] lg:w-[90%] mx-auto">
+<!-- navbar -->
+        <nav class="navbar static bg-base-100 px-0 py-5">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="pr-2 lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="text-[#131318] font-extrabold text-2xl lg:text-3xl">Hockey<span class="text-[#FF4240]">'</span>s</a>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <div class="navbar-center hidden lg:flex">
+              <ul class="text-[#424247] font-normal text-[16px] menu menu-horizontal px-1">
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Pages</a></li>
                 <li><a>Blog</a></li>
                 <li><a>Contact</a></li>
-            </ul>
-          </div>
-          <a class="text-[#131318] font-extrabold text-2xl lg:text-3xl">Hockey<span class="text-[#FF4240]">'</span>s</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-            <span class="mr-5 hidden lg:inline-block"><i class="fa-solid fa-magnifying-glass text-gray-500"></i></span>
-            <button class="btn-color-primary py-1 px-2 lg:py-2 lg:px-4 text-lg lg:text-xl">Get Ticket</button>
-        </div>
-      </div>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <span class="mr-5 hidden lg:inline-block"><i class="fa-solid fa-magnifying-glass text-gray-500"></i></span>
+                <button class="btn-color-primary py-[6px] px-2 lg:py-2 lg:px-4 text-lg lg:text-xl">Get Ticket</button>
+            </div>
+        </nav>
+    </header>
+    <main class="w-[95%] lg:w-[90%] mx-auto"class="w-[95%] lg:w-[90%] mx-auto">
+        <!-- banner carousal -->
+        <section class="lg:relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full rounded-2xl" alt="image"/>
+                  
+                  <div class="absolute flex items-center space-x-2 transform -translate-y-1/2 translate-x-1/2 right-1/2 top-1/2 lg:transform lg:translate-x-1/2 lg:translate-y-[20%] lg:-left-96 lg:bottom-1">
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide4" class="">❮</a>
+                    </div>
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide2" class="">❯</a>
+                    </div>
+                  </div>
+
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" alt="image" class="w-full rounded-2xl" />
+                  <div class="absolute flex items-center space-x-2 transform -translate-y-1/2 translate-x-1/2 right-1/2 top-1/2 lg:transform lg:translate-x-1/2 lg:translate-y-[20%] lg:-left-96 lg:bottom-1">
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide1" class="">❮</a>
+                    </div>
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide3" class="">❯</a>
+                    </div>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" alt="image" class="w-full rounded-2xl" />
+                                    <div class="absolute flex items-center space-x-2 transform -translate-y-1/2 translate-x-1/2 right-1/2 top-1/2 lg:transform lg:translate-x-1/2 lg:translate-y-[20%] lg:-left-96 lg:bottom-1">
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide2" class="">❮</a>
+                    </div>
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide4" class="">❯</a>
+                    </div>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" alt="image" class="w-full rounded-2xl" />
+                  <div class="absolute flex items-center space-x-2 transform -translate-y-1/2 translate-x-1/2 right-1/2 top-1/2 lg:transform lg:translate-x-1/2 lg:translate-y-[20%] lg:-left-96 lg:bottom-1">
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide3" class="">❮</a>
+                    </div>
+                    <div class="flex items-center justify-center rounded-full bg-black text-white text-center w-5 h-5 lg:w-10 lg:h-10 ">
+                        <a href="#slide1" class="">❯</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="lg:translate-x-1 lg:right-8 lg:translate-y-1 lg:bottom-16 flex flex-col lg:absolute bg-[#131318] rounded-2xl lg:p-8 p-3 box-border lg:w-[48%]">
+                <h2 class="text-lg lg:text-2xl font-extrabold text-white pb-1 lg:pb-4">Meet all the heroes from the field</h2>
+                <p class="text-sm lg:text-[16px] font-medium text-[#FFFFFF99]">Unveiling the Champions: A Glimpse into the Remarkable Heroes of the Sporting Arena.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
 </body>
 </html>
